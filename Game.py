@@ -27,3 +27,9 @@ class ChessGame:
 
             else:
                 return -1
+
+    def show_board(self):
+        print(self.board)
+
+    def get_fen(self):
+        return self.board.fen()
