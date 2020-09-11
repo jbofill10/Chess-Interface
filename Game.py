@@ -1,5 +1,4 @@
- 
-import chess
+ import chess
 
 
 class ChessGame:
