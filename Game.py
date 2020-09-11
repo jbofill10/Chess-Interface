@@ -1,3 +1,4 @@
+ 
 import chess
 
 
@@ -25,6 +26,7 @@ class ChessGame:
         elif self.board.is_game_over(claim_draw=False):
 
             if self.prev_turn == 'white':
+
                 return 1
 
             else:
@@ -38,3 +40,6 @@ class ChessGame:
 
     def curr_turn(self):
         return self.board.turn
+
+    def get_pychess_board(self):
+        return self.board
